@@ -1,0 +1,344 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+width: 100%;
+height: 70px;
+background-color: black;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}    
+.nav-logo{
+width: 180px;
+ margin-left: 15px;
+ height: 60px;
+ align-items: center;
+
+}
+.logo{
+width: 100%;
+height: 100%;
+}
+.logo img{
+height: 55px;
+object-fit: cover;
+}
+.nav-right{
+height: 60px;
+width: 68%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+color: aliceblue;
+}
+.nav-right a{
+   text-decoration: none;
+   color: white;
+}
+
+.nav-right a:hover{
+  background-color: rgba(128, 128, 128, 0.724);
+ transition: 0.2s;
+}
+a .NoHover:hover{
+  background-color: black;
+}
+.nav-right a{
+padding: 25px;
+font-size: 20px;
+font-weight: 200;
+}
+
+
+button {
+padding: 8px 20px;
+font-size: 15px;
+border-radius: 10px;
+/* border: 2px solid #e6e6e6; */
+background-color: #f91616e5;
+/* letter-spacing: -1px; */
+color: white;
+border: none;
+cursor: pointer;
+}
+.btndiv button:hover{
+background-color: #e6e6e6;
+color: #f91616e5;
+}
+
+.body-part{
+background-color: #f91616e5;
+display: flex;
+flex-wrap: wrap;
+}
+.div-body{
+height: 250px;
+width: 23%;
+background-color: aliceblue;
+margin: 9px;
+ position: relative;
+ }
+ .div-body img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ }
+ .content{
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(72, 13, 13, 0.6);
+  opacity: 0;
+  color: white;
+}
+.content a{
+  text-decoration: none;
+  color: white;
+   text-align: center;
+}
+.content:hover{
+  opacity: 1;
+}
+ .content >*{
+   transform: translateY(25px);
+   transition: transform 0.6s;
+}
+.content:hover >*{
+   transform: translateY(0);
+}
+ .last-div-img{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    background-color: #f91616e5 ;
+    justify-content: space-evenly;
+ }
+  .last-div-final{
+    width: 99%;
+    height: 300px;
+    background-color: black;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+.f-last{
+width: 200px;
+height: 250px;
+margin-top: 10px;
+}
+.f-last p{
+font-size: large;
+font-weight: 500;
+color: white;
+cursor: pointer;
+
+}
+.f-last p:hover{
+color: #f91616e5;
+}
+.f-last i{
+color: white;
+}
+.f-last i:hover{
+color: #f91616e5;
+}
+.image{
+margin-top: 30px;
+}
+.image img{
+width: 160px;
+height: 180px;
+object-fit: cover;
+}
+.f-last .name{
+  font-size: 12px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.596);
+}
+.f-last .name:hover{
+  color: rgba(255, 255, 255, 0.596);
+}
+@media (max-width:600px){
+  .navbar{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }    
+    .nav-logo{
+    width: 180px;
+     margin-left: 15px;
+     height: 60px;
+     align-items: center;
+    
+    }
+    .logo{
+    width: 100%;
+    height: 100%;
+    }
+    .logo img{
+    height: 55px;
+    object-fit: cover;
+    }
+    .nav-right{
+    height: 60px;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: aliceblue;
+    }
+    .hidden{
+      display: none;
+    }
+    .nav-right a{
+       text-decoration: none;
+       color: white;
+    }
+    
+    .nav-right a:hover{
+     background-color: rgba(128, 128, 128, 0.795);
+     transition: 0.2s;
+    }
+    .nav-right a{
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 200;
+    }
+    
+    .btndiv{
+      padding: 10px 3px;
+     font-weight: 600;
+     text-align: center;
+     align-items: center;
+    }
+    
+    .btndiv button {
+    padding: 10px 3px;
+    border-radius: 100px;
+    border: 2px solid #e6e6e6;
+    background-color: #f91616e5;
+    letter-spacing: -1px;
+    }
+    .btndiv button:hover{
+    background-color: #e6e6e6;
+    color: #f91616e5;
+    }
+    
+    .body-part{
+    background-color: #f91616e5;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .div-body{
+    height: 250px;
+    width: 90%;
+    background-color: aliceblue;
+    margin: 16px;
+     position: relative;
+     }
+     .div-body img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+     }
+     .content{
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(72, 13, 13, 0.6);
+      opacity: 0;
+      color: white;
+    }
+    .content a{
+      text-decoration: none;
+      color: white;
+       text-align: center;
+    }
+    .content:hover{
+      opacity: 1;
+    }
+     .content >*{
+       transform: translateY(25px);
+       transition: transform 0.6s;
+    }
+    .content:hover >*{
+       transform: translateY(0);
+    }
+     .last-div-img{
+        width: 100%;
+        height: 320px;
+        display: flex;
+        background-color: #f91616e5 ;
+        justify-content: space-evenly;
+     }
+      .last-div-final{
+        width: 99%;
+        height: 250px;
+        background-color: black;
+        justify-content: space-evenly;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+    .f-last{
+    width: 200px;
+    height: 250px;
+    margin-top: 30px;
+    }
+    .f-last p{
+    font-size: large;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    
+    }
+    .f-last p:hover{
+    color: #f91616e5;
+    }
+    .f-last i{
+    color: white;
+    }
+    .f-last i:hover{
+    color: #f91616e5;
+    }
+    .image{
+    margin-top: 5rem;
+    }
+    .image img{
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    margin-left: 15px;
+    }
+    .f-last .name{
+      font-size: 12px;
+      font-weight: 200;
+      color: rgba(255, 255, 255, 0.596);
+    }
+    .f-last .name:hover{
+      color: rgba(255, 255, 255, 0.596);
+    }
+}
